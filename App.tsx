@@ -1,13 +1,12 @@
-import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { MessagingScreen } from '@/components/messaging';
-import '@/theme'; // Import theme configuration
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
 export default function App() {
   return (
-    <>
-      <MessagingScreen />
-      <StatusBar style="auto" />
-    </>
-  );
+    <View>
+      <Text>App</Text>
+    </View>
+  )
 }
+
+const styles = StyleSheet.create({})
