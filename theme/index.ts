@@ -31,6 +31,9 @@ export const lightTheme = {
     messageTextOwn: '#FFFFFF',
     inputBackground: '#FFFFFF',
     inputBorder: '#E0E0E0',
+    // Additional colors for calendar
+    textSecondary: '#666666',
+    text: '#000000',
   },
   spacing: {
     xs: 4,
@@ -79,6 +82,11 @@ export const lightTheme = {
       lineHeight: 16,
     },
   },
+  // Helper functions for spacing
+  sizing: (value: number) => value,
+  gap: (value: number) => value,
+  padding: (value: number) => value,
+  margin: (value: number) => value,
 } as const
 
 export const darkTheme = {
@@ -100,6 +108,9 @@ export const darkTheme = {
     messageTextOwn: '#FFFFFF',
     inputBackground: '#1C1C1E',
     inputBorder: '#38383A',
+    // Additional colors for calendar
+    textSecondary: '#999999',
+    text: '#FFFFFF',
   },
   spacing: {
     xs: 4,
@@ -148,6 +159,11 @@ export const darkTheme = {
       lineHeight: 16,
     },
   },
+  // Helper functions for spacing
+  sizing: (value: number) => value,
+  gap: (value: number) => value,
+  padding: (value: number) => value,
+  margin: (value: number) => value,
 } as const
 
 // Register the configuration using new StyleSheet.configure API

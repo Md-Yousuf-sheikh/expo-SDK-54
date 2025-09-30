@@ -102,13 +102,13 @@ export function useEventLayout(
         const sortedEvents = sortBy(group, (event) => _timeToPixels(event.startTime));
         const columns: CalendarEvent[][] = [];
 
-        sortedEvents.forEach((event) => {
+        sortedEvents.forEach((event: CalendarEvent) => {
           // Find first column where this event doesn't overlap.
           let placedInColumn = false;
 
           for (let i = 0; i < columns.length; i++) {
             const column = columns[i];
-            const hasOverlap = column.some((existingEvent) =>
+            const hasOverlap = column.some((existingEvent: CalendarEvent) =>
               _eventsOverlap(event, existingEvent)
             );
 

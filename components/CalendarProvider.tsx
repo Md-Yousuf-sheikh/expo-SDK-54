@@ -106,7 +106,7 @@ export function CalendarProvider({ children, events }: CalendarProviderProps) {
   // Generates hourly time slots for the calendar.
   const _generateTimeSlots = () => {
     const dayStart = startOfDay(new Date());
-    return range(totalHours + 1).map((hour) =>
+    return range(totalHours + 1).map((hour: number) =>
       addHours(dayStart, hour + startHour),
     );
   };

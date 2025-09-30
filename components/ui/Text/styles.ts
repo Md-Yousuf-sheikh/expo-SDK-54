@@ -5,79 +5,59 @@ import { StyleSheet } from "react-native-unistyles";
  */
 export const styles = StyleSheet.create((theme) => ({
   text: {
-    fontFamily: theme.typography.fontFamily.regular,
-    fontSize: theme.typography.fontSize.base,
     color: theme.colors.text,
 
     variants: {
       variant: {
         light: {
-          fontFamily: theme.typography.fontFamily.light,
+          fontWeight: '300',
         },
         regular: {
-          fontFamily: theme.typography.fontFamily.regular,
+          fontWeight: '400',
         },
         medium: {
-          fontFamily: theme.typography.fontFamily.medium,
+          fontWeight: '500',
         },
         semibold: {
-          fontFamily: theme.typography.fontFamily.semibold,
+          fontWeight: '600',
         },
         bold: {
-          fontFamily: theme.typography.fontFamily.bold,
+          fontWeight: 'bold',
         },
       },
       size: {
         xs: {
-          fontSize: theme.typography.fontSize.xs,
-          letterSpacing: theme.typography.letterSpacing.xs,
+          fontSize: 12,
         },
         sm: {
-          fontSize: theme.typography.fontSize.sm,
-          letterSpacing: theme.typography.letterSpacing.sm,
+          fontSize: 14,
         },
         base: {
-          fontSize: theme.typography.fontSize.base,
-          letterSpacing: theme.typography.letterSpacing.base,
+          fontSize: 16,
         },
         lg: {
-          fontSize: theme.typography.fontSize.lg,
-          letterSpacing: theme.typography.letterSpacing.lg,
+          fontSize: 18,
         },
         xl: {
-          fontSize: theme.typography.fontSize.xl,
-          letterSpacing: theme.typography.letterSpacing.xl,
-          lineHeight: theme.typography.lineHeight.xl,
+          fontSize: 20,
         },
         "2xl": {
-          fontSize: theme.typography.fontSize["2xl"],
-          letterSpacing: theme.typography.letterSpacing["2xl"],
-          lineHeight: theme.typography.lineHeight["2xl"],
+          fontSize: 24,
         },
         "3xl": {
-          fontSize: theme.typography.fontSize["3xl"],
-          letterSpacing: theme.typography.letterSpacing["3xl"],
-          lineHeight: theme.typography.lineHeight["3xl"],
+          fontSize: 28,
         },
         "4xl": {
-          fontSize: theme.typography.fontSize["4xl"],
-          letterSpacing: theme.typography.letterSpacing["4xl"],
-          lineHeight: theme.typography.lineHeight["4xl"],
+          fontSize: 32,
         },
         "5xl": {
-          fontSize: theme.typography.fontSize["5xl"],
-          letterSpacing: theme.typography.letterSpacing["5xl"],
-          lineHeight: theme.typography.lineHeight["5xl"],
+          fontSize: 36,
         },
         "6xl": {
-          fontSize: theme.typography.fontSize["6xl"],
-          letterSpacing: theme.typography.letterSpacing["6xl"],
-          lineHeight: theme.typography.lineHeight["6xl"],
+          fontSize: 40,
         },
         "7xl": {
-          fontSize: theme.typography.fontSize["7xl"],
-          letterSpacing: theme.typography.letterSpacing["7xl"],
-          lineHeight: theme.typography.lineHeight["7xl"],
+          fontSize: 44,
         },
       },
     },
